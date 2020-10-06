@@ -1,0 +1,23 @@
+.text {
+    text-align: center;
+    color: black;
+   
+    margin: 0px;
+   
+}
+
+
+.cardBody {
+
+    margin-top:7%;
+    padding-left:40px;
+}
+
+
+.cardImg {
+
+    width: 280px;
+    height: 320px;
+    
+
+}

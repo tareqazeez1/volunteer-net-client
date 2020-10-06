@@ -1,0 +1,22 @@
+.navBar , .navBar:hover{
+    color:black;
+    font-weight: 500;
+    font-size:15px;
+    text-decoration: none;
+}
+
+.NavBtn Button{
+    padding: 7px 25px 7px 25px;
+  
+}
+
+.NavBtn{
+    margin-left: 60px;
+}
+
+.logo{
+    width: 180px;
+    height: 50px;
+    margin-left: 90px;
+
+}
