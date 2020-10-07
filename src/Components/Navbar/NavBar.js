@@ -1,12 +1,11 @@
 import React, { useContext } from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { UserContext } from '../../App';
 import logo from '../../logos/Group 1329.png';
 import './NavBar.css';
 
 
-const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
 
 const NavBar = () => {
     return (
@@ -29,7 +28,7 @@ const NavBar = () => {
                 <Link className='navBar ml-5' to='donation' >Donation</Link>
                 <Link className='navBar ml-5' to='event'>Event</Link>
                 <Link className='navBar ml-5' to='blog'>Blog</Link>
-                <h5> Name : {loggedInUser.name} </h5>
+                
 
                 
               </Nav>

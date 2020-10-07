@@ -11,11 +11,11 @@ import './Registration.css';
 
 const Registration = () => {
 
-    const [registration, setRegistration] = useState([])
+    const [registration, setRegistration] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
 
     useEffect(() => {
-        fetch('http://localhost:5000/info?email=' + loggedInUser.email)
+        fetch('http://localhost:5000/info?email='+loggedInUser.email)
             .then(res => res.json())
             .then(data => setRegistration(data));
 
@@ -30,7 +30,7 @@ const Registration = () => {
 
             .then(res => res.json())
             .then(data => {
-                console.log(data, 'Not Found')
+                console.log(data)
             })
     }
 

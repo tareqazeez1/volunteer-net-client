@@ -23,8 +23,7 @@ const Register = () => {
 
     const onSubmit = data => {
         history.push(`/registration/${loggedInUser.name}`)
-        // console.log(data, "hello this is form")
-
+        
         const userDetails = { ...loggedInUser, description: data, registrationTime: new Date(), event: routeChange.name }
 
         fetch('http://localhost:5000/addInfo', {
