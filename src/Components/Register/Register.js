@@ -23,10 +23,10 @@ const Register = () => {
 
     const onSubmit = data => {
         history.push(`/registration/${loggedInUser.name}`)
-        
+
         const userDetails = { ...loggedInUser, description: data, registrationTime: new Date(), event: routeChange.name }
 
-        fetch('http://localhost:5000/addInfo', {
+        fetch('https://safe-wildwood-27716.herokuapp.com/addInfo', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(userDetails)

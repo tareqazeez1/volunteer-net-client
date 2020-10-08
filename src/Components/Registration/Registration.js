@@ -11,22 +11,22 @@ import './Registration.css';
 
 const Registration = () => {
 
-
+   
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
-    const [activities, setActivities] = useState([]);
-
-    // console.log(loggedInUser.email)
+    const [registration, setRegistration] = useState([]);
+    
+    console.log(loggedInUser.email)
     useEffect(() => {
-        fetch('http://localhost:5000/infos?email=' + loggedInUser.email)
+        fetch('https://safe-wildwood-27716.herokuapp.com/infos?email='+loggedInUser.email)
             .then(res => res.json())
-            .then(data => setActivities(data));
+            .then(data => setRegistration(data));
 
 
-    }, [activities])
+    }, [registration])
 
     const handleDeleteItem = (id) => {
 
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://safe-wildwood-27716.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
 
@@ -41,7 +41,7 @@ const Registration = () => {
             <NavBar></NavBar>
 
             {
-                activities.map(reg =>
+                registration.map(reg =>
                     <div className='container'>
                         <div className='row'>
                             <div className='col-md-4'></div>
