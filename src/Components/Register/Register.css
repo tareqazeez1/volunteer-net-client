@@ -29,14 +29,11 @@ padding:25px;
 
 }
 
-::-webkit-input-placeholder:focus {
-    outline: none;
-  }
 
-  .inputText{
+.inputText{
       margin-top:10px;
-  }
+}
 
-  .inputText:focus{
+.inputText:focus{
       outline:none
-  }
+}
